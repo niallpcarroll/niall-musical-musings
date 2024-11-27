@@ -18,8 +18,8 @@ class Post(models.Model):
     class Meta:
         ordering = ["-created_on"]
 
-        def __str__(self):
-            return f"{self.title} | Author: {self.author}"
+    def __str__(self):
+        return f"{self.title} | Author: {self.author}"
 
 
 class Comment(models.Model):
@@ -32,8 +32,8 @@ class Comment(models.Model):
     class Meta:
         ordering = ["created_on"]
 
-        def __str__(self):
-            return f"Comment on {self.body} added by {self.author}"
+    def __str__(self):
+        return f"Comment on {self.body} added by {self.author}"
 
 
 
